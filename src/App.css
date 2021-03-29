@@ -1,0 +1,351 @@
+.container1{
+	display: grid;
+    grid-template-columns: 1.5fr 1fr;
+	position: relative;
+	font-weight: lighter;
+	overflow: hidden;
+}
+
+.gridelement.main {
+	background: #EF3340;
+	padding-left: 8em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border-radius: 0 0 6em 0;
+
+}
+.container1 h1{
+	margin: 0px;
+    font-weight: lighter;
+	color: white;
+}
+.container1 ul{
+	margin: 1em 0 6em 0;
+    padding: 0;
+    list-style-type: none;
+}
+.container1 ul li{
+	color: white;
+	font-weight: lighter;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	display: flex;
+    align-items: center;
+}
+.container1 ul li span, .container1 ul li img{
+	color: white;
+	margin-right: .5em;
+	height: 16px;
+    width: 13px;
+}
+.container1 .gridelement.main p{
+	color:#FFD7DA;
+	font-size: larger;
+	font-size: .79em;
+}
+.container1 .family{
+	position: absolute;
+	top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .container1 .family.hidden{
+	position: relative;
+    height: 128px;
+    top: -74px;
+    left: 26px;
+} */
+.container1 h2{
+	font-weight: bolder;
+}
+.gridelement.main2{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	color: #494F66;
+}
+.gridelement.main2 h2{
+	margin-bottom: 0;
+	text-align: center;
+}
+.gridelement.main2 form{
+	display: grid;
+	grid-template-columns: 1;
+	padding: 0 3em 3em 3em;
+}
+.gridelement.main2 p{
+	color: #676F8F;
+}
+.gridelement.main2 p.errorForm{
+	color:red
+}
+
+.form_group{
+	font-size: 12px;
+	color: #A3ABCC;
+}
+.form_group:last-child(){
+	margin-bottom: 6em;
+}
+.gridelement.main2 input[type="submit" i]{
+	margin-top: 2em;
+}
+
+.radioInput label{
+	color: #676F8F;
+    font-weight: 400;
+    font-size: 14px;
+}
+button{
+	background: #EF3340;
+    border-color: #583d3d00;
+    padding: .5em;
+    border-radius: 8px;
+    color: white;
+	margin:.5em
+}
+
+
+:root {
+	--input-color: #99A3BA;
+	--input-border: #CDD9ED;
+	--input-background: #fff;
+	--input-placeholder: #CBD1DC;
+	--input-border-focus: #275EFE;
+	--group-color: var(--input-color);
+	--group-border: var(--input-border);
+	--group-background: #EEF4FF;
+	--group-color-focus: #fff;
+	--group-border-focus: var(--input-border-focus);
+	--group-background-focus: #678EFE;
+  }
+  
+  .form-field {
+	display: block;
+	width: 100%;
+	padding: 8px 16px;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: inherit;
+	border-radius: 6px;
+	-webkit-appearance: none;
+	color: var(--input-color);
+	border: 1px solid var(--input-border);
+	background: var(--input-background);
+	transition: border 0.3s ease;
+  }
+  .form-field::-moz-placeholder {
+	color: var(--input-placeholder);
+  }
+  .form-field:-ms-input-placeholder {
+	color: var(--input-placeholder);
+  }
+  .form-field::placeholder {
+	color: var(--input-placeholder);
+  }
+  .form-field:focus {
+	outline: none;
+	border-color: var(--input-border-focus);
+  }
+  
+  .form-group {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin: .9em .9em .9em 0 ;
+  }
+  .form-group > span,
+  .form-group .form-field {
+	white-space: nowrap;
+	display: block;
+  }
+  .form-group > span:not(:first-child):not(:last-child),
+  .form-group .form-field:not(:first-child):not(:last-child) {
+	border-radius: 0;
+  }
+  .form-group > span:first-child,
+  .form-group .form-field:first-child {
+	border-radius: 6px 0 0 6px;
+  }
+  .form-group > span:last-child,
+  .form-group .form-field:last-child {
+	border-radius: 0 6px 6px 0;
+  }
+  .form-group > span:not(:first-child),
+  .form-group .form-field:not(:first-child) {
+	margin-left: -1px;
+  }
+  .form-group .form-field {
+	position: relative;
+	z-index: 1;
+	flex: 1 1 auto;
+	width: 1%;
+	margin-top: 0;
+	margin-bottom: 0;
+  }
+  .form-group > span {
+	text-align: center;
+	padding: 8px 12px;
+	font-size: 14px;
+	line-height: 25px;
+	color: var(--group-color);
+	background: var(--group-background);
+	border: 1px solid var(--group-border);
+	transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  .form-group:focus-within > span {
+	color: var(--group-color-focus);
+	background: var(--group-background-focus);
+	border-color: var(--group-border-focus);
+  }
+
+
+  input[type="submit" i]:disabled {
+	background: #f0f2fa;
+    border-color: #583d3d00;
+    padding: .5em;
+	border-radius: 8px;
+  }
+  input[type="submit" i]{
+	background:  #EF3340;
+    border-color: #583d3d00;
+    padding: .5em;
+	border-radius: 8px;
+	color: white;
+  }
+  .gridelement.main2.final p{
+	  text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	padding: 2em;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+  }
+  .container h4{
+	font-weight: normal;
+  }
+  .cuerpo {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1rem;
+  }
+  .cuerpo > div {
+	background: #1d1d1d;
+	border-radius: 12px;
+	overflow: hidden;
+	/* background: #EDE7F6; */
+	/*padding: 1rem;
+	border-radius: 1rem;*/
+  }
+
+  .login-logout{
+	margin: 1em;
+  }
+ 
+
+
+  .lds-dual-ring {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+	z-index: 111111;
+  }
+  .lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  @media (max-width: 460px) {
+	.header{
+		flex-direction: column;
+		align-items: flex-start;
+		color: white;
+		padding: .5em;
+	}
+	.header .link li a{
+		text-decoration: none;
+		color: white
+	}
+	.header h1{
+		margin: 0px;
+		padding-left: 0px;
+	}
+	.container1{
+		grid-template-columns: 1fr;
+	}
+	.container1 h1{
+		font-size: 32px;
+	}
+	.container1 ul li {
+		font-size: 14px;
+	}
+	.gridelement.main {
+		background: #EF3340;
+		padding: 1em;
+		border-radius: 0 0 6em 0;
+	
+	}
+	.container1 ul .hidden{
+		display: none;
+	}
+	.gridelement.main p{
+		display: none;
+	}
+	.container1 .family{
+		transform: scale(.5);
+		top: -1%;
+    	left: 43%;
+	}
+	.container1 .family.hidden{
+		position: relative;
+		height: 128px;
+		top: -74px;
+		left: 26px;
+	}
+  }
